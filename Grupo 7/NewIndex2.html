@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Series</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+  <link rel="stylesheet" href="psum-gallery.css">
+  <link href="NewIndex.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Newheader.css">
+  <style>
+    @import url('https://rsms.me/inter/inter.css');
+
+    html {
+      font-family: 'Inter', sans-serif;
+    }
+
+    @supports (font-variation-settings: normal) {
+      html {
+        font-family: 'Inter var', sans-serif;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+    <label for="menu-icon"></label>
+    <nav class="nav">
+      <ul class="pt-5">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="NewIndex2.html">Portfolio</a></li>
+        <li><a href="NewSobrenosotros.html">Sobre Nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container psum-container text-center" style="padding: 5px;" ;>
+
+    <h1>BuyClick</h1>
+ 
+    <div class="psum-gallery">
+
+      <div class="row">
+
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a class="lightbox" href="jojos.html">
+              <img src="images/jojo.jpeg" alt="Pixelsum Illustration">
+            </a>
+            <div class="caption">
+              <h3>Jojo's Bizarre Adventure</h3>
+
+              <p>La serie va de las desventuras de la familia Joestar y lo que sufren a 
+                diario peleando contra vampiros</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a class="lightbox" href="twd.html">
+              <img src="images/twd.jpeg" alt="Bridge">
+            </a>
+            <div class="caption">
+              <h3>The Walking Dead</h3>
+              <p>Basado en la historieta escrita por Robert, este drama crudo describe las vidas de un grupo de sobrevivientes</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a class="lightbox" href="got.html">
+              <img src="images/got.jpeg" alt="Tunnel">
+            </a>
+            <div class="caption">
+              <h3>Game of Throne</h3>
+              <p>Esta serie muestra la competencia entre familias nobles de siete reinos de Westeros.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a class="lightbox" href="breakingbad.html">
+              <img src="images/peaky.jpeg" alt="Coast">
+            </a>
+            <div class="caption">
+              <h3>Peaky Blinders</h3>
+              <p>Gran Bretaña vive la posguerra. Los soldados regresan, se acuñan nuevas revoluciones y nacen bandas criminales en una nación agitada</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a class="lightbox" href="Principe.html">
+              <img src="images/principe.jpeg" alt="Rails">
+            </a>
+            <div class="caption">
+              <h3>Príncipe del Belhair</h3>
+              <p>Al oeste en Filadelfia, crecía y vivía
+                Sin hacer mucho caso a la policía
+                Jugaba al basket sin cansarme demasiado
+                Porque por las noches me sacaba el graduado
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a class="lightbox" href="prision.html">
+              <img src="images/prision.jpeg" alt="Traffic">
+            </a>
+            <div class="caption">
+              <h3>Prision Break</h3>
+              <p>Un hombre trama una elaborada trampa para sacar a su hermano de prisión.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>
+    baguetteBox.run('.psum-gallery');
+  </script>
+</body>
+
+</html>

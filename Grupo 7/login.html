@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <title>Login</title>
+</head>
+
+<body>
+
+    <script>
+		function validar()
+		{
+			var email = document.getElementById("email").value;
+			var Contraseña = document.getElementById("pass").value;	
+
+			if(email == "grupo7@gmail.com" && Contraseña == "1234")
+			{
+                alert("Email y Contraseña validos");
+                window.location="index.html";
+			}
+			else
+			{
+				alert("Datos no validos");
+			}
+		} 
+    </script>
+
+    <div class="container">
+        <div class="login">
+            <div class="row">
+                <h2>Iniciar Sesión</h2>
+                <div class="col-md-12">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="ejemplo@gmail.com" name="email">
+                    <br>
+                    <label for="password">Contraseña</label>
+                    <input type="password" class="form-control" id="pass" placeholder="Ejemplo123" name="pass">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="reset" id="reset" value="Cancelar" class="btn btn-outline-primary btn-form" onclick="location.href='index.html'">
+                </div>
+                <div class="col-md-6">
+                    <input onclick="validar()" type="button" id="register" value="Iniciar Sesión" class="btn btn-outline-success btn-form">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
